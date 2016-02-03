@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEBEE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="book name"
+            android:ems="10"
+            android:id="@+id/title"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/upload_image"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="price"
+            android:ems="10"
+            android:id="@+id/price"
+            android:layout_below="@+id/title"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_marginTop="42dp"
+           />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="books info"
+            android:textColor="#ff5722"
+            android:id="@+id/top_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:id="@+id/submit"
+            android:layout_below="@+id/price"
+            android:layout_alignLeft="@+id/price"
+            android:layout_alignStart="@+id/price"
+            android:layout_alignRight="@+id/price"
+            android:layout_alignEnd="@+id/price" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upload image"
+            android:id="@+id/upload"
+            android:layout_below="@+id/price"
+            android:layout_alignRight="@+id/upload_image"
+            android:layout_alignEnd="@+id/upload_image" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:id="@+id/upload_image"
+            android:src="@drawable/batman"
+            android:layout_marginTop="42dp"
+            android:layout_below="@+id/top_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/top_text"
+            android:layout_toStartOf="@+id/top_text" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="branch"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/title"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
